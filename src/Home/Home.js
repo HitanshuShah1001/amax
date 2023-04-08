@@ -1,5 +1,10 @@
 import React from "react";
+import ImagesSlider from "../Carousel/ImagesSlider";
 
 export default function Home() {
-  return <h1 style={{ backgroundColor: "red" }}>Hi</h1>;
+  return (
+    <>
+      <ImagesSlider />
+    </>
+  );
 }
