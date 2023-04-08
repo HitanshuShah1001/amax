@@ -4,8 +4,10 @@
   
 
 .slick-dots {
+    position: unset;
     bottom:unset;
     height:unset;
+    margin-top: 10px;
 }
 
 .slick-prev:before,
