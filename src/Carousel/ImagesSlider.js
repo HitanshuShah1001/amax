@@ -9,20 +9,10 @@ import ImageRenderer from "./ImageRenderer";
 
 export default function ImagesSlider() {
   return (
-    <div className="container">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          backgroundColor: "red",
-        }}
-      >
-        <Slider {...Settings}>
-          {Images.map((item) => (
-            <ImageRenderer item={item} key={item.id} />
-          ))}
-        </Slider>
-      </div>
-    </div>
+    <Slider {...Settings}>
+      {Images.map((item) => (
+        <ImageRenderer item={item} key={item.id} />
+      ))}
+    </Slider>
   );
 }

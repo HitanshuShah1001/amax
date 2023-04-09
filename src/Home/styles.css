@@ -32,6 +32,7 @@
   background-color: #36454F;
   display: flex;
   flex-direction: column;
+  transform: skew(14deg);
 }
 
 .header {
@@ -43,5 +44,5 @@
   display: flex;
   justify-content: center;
   margin-top: 20;
-  
+
 }
