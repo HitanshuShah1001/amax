@@ -3,11 +3,10 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
-  console.log(window.location.href);
   return (
     <>
       <nav>
-        <ul className="list">
+        <ul>
           <li className="nav-content">
             <NavLink to="/" className="link">
               Home
@@ -24,6 +23,7 @@ export default function Navbar() {
             </NavLink>
           </li>
         </ul>
+        <img src={require("../Carousel/Amax_logo.JPG")} className="logo" />
       </nav>
     </>
   );

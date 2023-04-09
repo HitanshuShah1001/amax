@@ -1,8 +1,8 @@
 nav {
   background: #36454F;
-  height: 55px;
+  height: 75px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   z-index: 12;
 }
 
@@ -16,6 +16,7 @@ ul {
     list-style-type: none;
     position: relative;
     justify-content: center;
+    margin-left: 20px;
 }
 
 .nav-content {
@@ -41,5 +42,11 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
 
+.logo {
+    height: 50px;
+   
+    margin-right: 20px;
+    align-self: center;
 }

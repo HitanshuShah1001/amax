@@ -3,3 +3,63 @@
     display:block;
     margin-left: 40px;
 }
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 1s;
+  }
+  
+  .about-us-header {
+   
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .about-us-image {
+    height: 300px;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+ 
+  }
+  
+  .about-us-content {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  
+  .about-us-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+  .about-us-difference-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-difference-list {
+    padding-left: 0;
+    text-align: center;
+    flex-direction: column;
+    list-style-type: unset;
+  }
+  
+  .about-us-difference-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .vertical-line {
+    border-left: 1px solid black;
+    height: 50px;
+    margin-left: 20px;
+  }
