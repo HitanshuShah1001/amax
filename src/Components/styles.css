@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.desc {
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.profile {
+    text-align: left;
+}
+
+
+hr{
+    color: red;
+    width: 80px;
+    margin: 0 0;
+    border-width: 1px;
+}
+
+.about-us-image {
+    height: 300px;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
