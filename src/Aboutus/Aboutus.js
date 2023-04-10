@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
-import { Features } from "../Constants/Features";
+import Imagewithdescriptiononleft from "../Components/Imagewithdescription/Imagewithdescriptionleft";
+import Imagewithdescriptiononright from "../Components/Imagewithdescription/Imagewithdescriptionright";
 
 export default function AboutUs() {
   const [showContent, setShowContent] = useState(false);
@@ -17,6 +18,7 @@ export default function AboutUs() {
         style={{
           display: "flex",
           justifyContent: "center",
+          flexDirection: "column",
         }}
       >
         <div className="about-us-logo">
@@ -26,6 +28,14 @@ export default function AboutUs() {
             alt="Logo"
           />
         </div>
+        <Imagewithdescriptiononleft
+          title="Company Profile"
+          imgsource={require("../assets/Amax-Equipments.png")}
+        />
+        <Imagewithdescriptiononright
+          title="Infastructure"
+          imgsource={require("../Carousel/AboutUs.png")}
+        />
       </div>
     </div>
   );
