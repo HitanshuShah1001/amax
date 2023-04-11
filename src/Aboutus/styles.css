@@ -68,9 +68,17 @@
     height: 180px;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: white;
     width: 100vw;
     justify-content: center;
-    
 
+
+  }
+
+  p {
+    color: #787879;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
   }

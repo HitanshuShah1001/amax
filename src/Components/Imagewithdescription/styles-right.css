@@ -1,9 +1,10 @@
-.container {
+.container-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width:85%;
     align-self: center;
+    background-color:  #ecebeb;
 }
 
 .desc {
@@ -33,4 +34,12 @@ hr{
     border-radius: 20px;
     margin-top: 20px;
   }
+
+h1 {
+    color: #212121;
+    font-family: 'Roboto' sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+}
 

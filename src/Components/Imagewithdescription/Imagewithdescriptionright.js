@@ -5,19 +5,16 @@ export default function Imagewithdescriptiononright({
   imgsource,
   alt = "Image",
   title,
+  children,
 }) {
   return (
-    <div className="container">
+    <div className="container-div">
       <img className="about-us-image" src={imgsource} alt={alt} />
       <div className="desc">
-        <h2 className="profile">{title}</h2>
+        <h1 className="profile">{title}</h1>
         <hr />
 
-        <p>
-          With 20+ Years of Experience in manufacturing and trading of Road
-          Construction machinery, we are growing our market presence now as Amax
-          Equipments in the Domestic and International markets across the globe.
-        </p>
+        {children}
       </div>
     </div>
   );
