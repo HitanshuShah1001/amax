@@ -1,0 +1,20 @@
+ul-features {
+    padding: 0 0;
+    margin: 0 0;
+    align-items: center;
+    height: 100%;
+    padding: 10px 0px;
+    position: relative;
+    justify-content: center;
+
+}
+
+li {
+    margin-top: 10px;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+}
+

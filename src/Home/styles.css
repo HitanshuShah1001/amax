@@ -19,7 +19,7 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  transform: skew(14deg);
+
 }
 
 .header {

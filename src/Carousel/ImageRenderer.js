@@ -8,7 +8,7 @@ export default function ImageRenderer({ item }) {
         alt={item.alt}
         style={{
           width: "100%",
-          height: "30vh",
+          height: "35vh",
           borderRadius: 13,
           objectFit: "cover",
         }}
