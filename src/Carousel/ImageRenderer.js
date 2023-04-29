@@ -6,7 +6,12 @@ export default function ImageRenderer({ item }) {
       <img
         src={item.src}
         alt={item.alt}
-        style={{ width: "100%", height: "30vh", borderRadius: 13 }}
+        style={{
+          width: "100%",
+          height: "30vh",
+          borderRadius: 13,
+          objectFit: "cover",
+        }}
       />
     </div>
   );

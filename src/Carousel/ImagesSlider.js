@@ -9,7 +9,7 @@ import ImageRenderer from "./ImageRenderer";
 
 export default function ImagesSlider() {
   return (
-    <Slider {...Settings}>
+    <Slider {...Settings} style={{ width: "100%" }}>
       {Images.map((item) => (
         <ImageRenderer item={item} key={item.id} />
       ))}

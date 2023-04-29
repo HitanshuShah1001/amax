@@ -12,8 +12,12 @@
 
 .slick-prev:before,
 .slick-next:before {
-  color: white;
+  color: black;
   font-size: 20px;
+}
+
+.slick-slider{
+  width:100%;
 }
 
 .slick-prev:before {
@@ -23,13 +27,8 @@
 .slick-next:before {
   content: '>';
 }
-.slick-slider{
-  width:50%;
-
-}
 
 .main-container {
-  background-color: #36454F;
   display: flex;
   flex-direction: column;
 }
@@ -42,6 +41,6 @@
 .image-carousel {
   display: flex;
   justify-content: center;
-  margin-top: 20;
+ 
   
 }

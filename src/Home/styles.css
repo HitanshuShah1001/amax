@@ -10,26 +10,13 @@
     margin-top: 10px;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-  font-size: 20px;
-}
 
-.slick-prev:before {
-  content: '<';
-}
-
-.slick-next:before {
-  content: '>';
-}
 .slick-slider{
-  width:50%;
+  width:90%;
 
 }
 
 .main-container {
-  background-color: #36454F;
   display: flex;
   flex-direction: column;
   transform: skew(14deg);
@@ -42,7 +29,7 @@
 
 .image-carousel {
   display: flex;
-  justify-content: center;
+  width: '100vw';
   margin-top: 20;
 
 }

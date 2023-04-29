@@ -1,10 +1,10 @@
 export const Settings = {
   infinite: true,
-  dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   lazyLoad: true,
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 3000,
   arrows: true,
+  dots: true,
 };
