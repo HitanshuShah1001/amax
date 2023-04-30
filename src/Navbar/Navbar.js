@@ -22,6 +22,11 @@ export default function Navbar() {
               About Us
             </NavLink>
           </li>
+          <li className="nav-content">
+            <NavLink to="/contact" className="link">
+              Contact
+            </NavLink>
+          </li>
         </ul>
         <img src={require("../Carousel/Amax_logo.JPG")} className="logo" />
       </nav>
