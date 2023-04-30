@@ -33,3 +33,11 @@
   margin-top: 20;
 
 }
+
+.feature-container{
+  width: 100vw;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 10;
+}

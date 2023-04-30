@@ -2,7 +2,7 @@ import React from "react";
 import ImagesSlider from "../Carousel/ImagesSlider";
 import Getaquote from "../Components/GetAQuote/Getaquote";
 import Features from "../Components/Features/Features";
-import { Footer } from "../Components/FooterLib/Footer";
+import Footer from "../Footer/Footer";
 
 export default function Home() {
   return (
@@ -12,19 +12,11 @@ export default function Home() {
           <ImagesSlider />
         </div>
         <Getaquote />
-        <div
-          style={{
-            width: "100vw",
-            alignSelf: "center",
-            justifyContent: "center",
-            display: "flex",
-            marginTop: 10,
-          }}
-        >
+        <div className="feature-container">
           <Features />
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

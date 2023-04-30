@@ -1,25 +1,27 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./features.css";
 import { Featurepoints } from "../../Constants/Featurepoints";
 
 export default function Features() {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignSelf: "center",
-      }}
-    >
+    <div style={{ display: "flex", alignSelf: "center" }}>
       {Featurepoints.map((indfeat, findex) => (
         <div className="list-container">
           <div>
-            <h2 style={{ textAlign: "center" }}>{indfeat.name}</h2>
+            <h3
+              style={{ textAlign: "center", fontSize: "15px" }}
+              className="fade-in"
+            >
+              {indfeat.name}
+            </h3>
+            <ul className="slide-in">
+              {indfeat.feature.map((feat, index) => (
+                <li>
+                  <p>{feat}</p>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul>
-            {indfeat.feature.map((feat, index) => (
-              <li>{feat}</li>
-            ))}
-          </ul>
         </div>
       ))}
     </div>
