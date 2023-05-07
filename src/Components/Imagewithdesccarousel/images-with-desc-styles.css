@@ -1,0 +1,24 @@
+.carousel-image {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .carousel-image.active {
+    opacity: 1;
+  }
+  
+
+.background-linear-grad{
+  background: #43cea2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+.fade-cards-in {
+  opacity: 0;
+  transition: 1s step-end;
+}
+
+.fade-cards-in-show {
+  opacity: 1;
+}
+

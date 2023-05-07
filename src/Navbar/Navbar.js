@@ -28,7 +28,7 @@ export default function Navbar() {
             </NavLink>
           </li>
         </ul>
-        <img src={require("../Carousel/Amax_logo.JPG")} className="logo" />
+        {/* <img src={require("../Carousel/Amax_logo.JPG")} className="logo" /> */}
       </nav>
     </>
   );

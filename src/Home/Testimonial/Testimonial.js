@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "./testimonial-styles.css";
 
 export default function Testimonial() {
+  const [showContent, setShowcontent] = useState(false);
+
+  useEffect(() => {
+    setShowcontent(true);
+  }, [showContent]);
+
   return (
-    <div style={{ padding: "0px 40px" }}>
+    <div
+      style={{ padding: "0px 40px", opacity: showContent ? 1 : 0 }}
+      className="testimonial"
+    >
       <h2
         style={{
           fontSize: "30px",
           fontWeight: 400,
-          paddingBottom: "15px",
+          paddingBottom: "10px",
           position: "relative",
           textTransform: "capitalize",
           textAlign: "center",
