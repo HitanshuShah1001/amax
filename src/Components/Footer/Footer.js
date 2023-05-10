@@ -1,44 +1,37 @@
 import React from "react";
-import "./styles-footer.css";
-import ContactDetails from "./ContactDetails/ContactDetails";
-import Address from "./Address/Address";
-import ContactIndex from "./ContactDetails/ContactIndex";
-export default function Footer() {
+import Socials from "./Socials";
+import Contact from "./Contact";
+import Privatelimited from "./Privatelimited";
+import { styles } from "./styles";
+
+const Footer = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "100%",
-        backgroundColor: "black",
-        flexDirection: "column",
-      }}
-    >
-      <div style={{ marginLeft: "auto", marginRight: "auto" }}>
-        <h1 className="contact-us-header">Contact Us</h1>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-around",
-        }}
-      >
-        <ContactIndex />
-        <div>
-          <Address
-            title={"Industry"}
-            desc={
-              "Survey No. 777, Limbasi-Vastana Road, Off. Ahmedabad- Baroda National Highway, Dist. Kheda, Gujarat."
-            }
+    <footer style={{ backgroundColor: "#f0f0f0", padding: "1rem" }}>
+      <div style={styles.footer}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            width: "20%",
+            justifyContent: "space-around",
+            padding: "10px",
+          }}
+        >
+          <img
+            src={require("../../Carousel/Amax_logo.JPG")}
+            alt="Company Logo"
+            style={{ height: "5rem", marginRight: "1rem" }}
           />
-          <Address title={"Office"} desc={"Ahemdabad,Gujarat"} />
+          <p style={{ marginTop: 10 }}>
+            Survey No. 777,Limbasi-Vastana Road,via Ahmedabad-Baroda National
+            Highway,Dist Kheda,Gujarat-387520
+          </p>
         </div>
-        <div>
-          <h4 style={{ color: "white" }}>Hi</h4>
-          <h4 style={{ color: "white" }}>Hi</h4>
-          <h4 style={{ color: "white" }}>Hi</h4>
-        </div>
+        <Contact />
       </div>
-    </div>
+      <Privatelimited />
+    </footer>
   );
-}
+};
+
+export default Footer;

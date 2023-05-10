@@ -4,20 +4,12 @@ import Getaquote from "../Components/GetAQuote/Getaquote";
 import Features from "../Components/Features/Features";
 import Testimonial from "./Testimonial/Testimonial";
 import Imagewithdesccarousel from "../Components/Imagewithdesccarousel/Imagewithdesccarousel";
+import Footer from "../Components/Footer/footer";
 import History from "./History/History";
 import "./styles.css";
+import { ProductList } from "../Components/Products/Products";
 
 export default function Home() {
-  const [slidIn, setIsSlidIn] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsSlidIn(true);
-    }, 300);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div style={{ overflow: "hidden" }}>
       <div className="main-container">
@@ -32,6 +24,8 @@ export default function Home() {
         <Testimonial />
         <Imagewithdesccarousel />
         <History />
+        <ProductList />
+        <Footer />
       </div>
     </div>
   );
