@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Counter from "../../Components/Counter/Counter";
 import "./history-styles.css";
+import { styles } from "./styles";
 
 export default function History() {
   const [slidIn, setIsSlidIn] = useState(false);
@@ -14,15 +15,7 @@ export default function History() {
   }, []);
   return (
     <div className={`slide-in-container`} style={{ opacity: slidIn ? 1 : 0 }}>
-      <div
-        style={{
-          display: "flex",
-
-          justifyContent: "space-evenly",
-          flexWrap: "wrap",
-          marginTop: 15,
-        }}
-      >
+      <div style={styles.project}>
         <Counter maximum={20} label={"Years of Experience"} toincludeplus />
         <Counter maximum={100} label={"Installations"} toincludeplus />
         <Counter maximum={50} label={"Happy Customers"} toincludeplus />
