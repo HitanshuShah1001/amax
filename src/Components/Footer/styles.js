@@ -17,4 +17,11 @@ export const styles = {
     margin: 0,
     padding: 0,
   },
+  imgandaddress: {
+    display: "flex",
+    flexDirection: "column",
+    width: "20%",
+    justifyContent: "space-around",
+    padding: "10px",
+  },
 };
