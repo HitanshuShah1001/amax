@@ -16,6 +16,23 @@ export default function Navbar() {
             <NavLink to="/products" className="link">
               Products
             </NavLink>
+            <ul className="dropdown-menu">
+              <li>
+                <NavLink to="/products/product1" className="link">
+                  Product 1
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/products/product2" className="link">
+                  Product 2
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/products/product3" className="link">
+                  Product 3
+                </NavLink>
+              </li>
+            </ul>
           </li>
           <li className="nav-content">
             <NavLink to="/aboutus" className="link">
