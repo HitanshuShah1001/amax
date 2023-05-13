@@ -23,6 +23,11 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li className="nav-content">
+            <NavLink to="/gallery" className="link">
+              Gallery
+            </NavLink>
+          </li>
+          <li className="nav-content">
             <NavLink to="/contact" className="link">
               Contact
             </NavLink>
